@@ -3,10 +3,9 @@ package com.singmak.attentionspanchallenge
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.*
+import androidx.compose.material.Button
+import androidx.compose.material.Text
 import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.singmak.attentionspanchallenge.ui.theme.AttentionSpanChallengeTheme
 
@@ -24,10 +23,11 @@ fun App() {
     var testCount by remember { mutableStateOf(0) }
     AttentionSpanChallengeTheme {
         // A surface container using the 'background' color from the theme
-        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-            Greeting("Android")
-            Counter(testCount, onClick = { testCount++ })
-        }
+//        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
+//            Greeting("Android")
+//            Counter(testCount, onClick = { testCount++ })
+//        }
+        Navigation()
     }
 
 }
